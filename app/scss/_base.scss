@@ -1,0 +1,174 @@
+// core light variables
+@import 'nativescript-theme-core/scss/light';
+
+// variable overrides
+$accent: #315625;
+$ab-background: $accent;
+$ab-color: $white;
+
+$burgundy: #411f0e;
+$green-alt: #709d6b;
+$yellow: #fbcc01;
+$orange: #e18c01;
+$base: $burgundy;
+$background: lighten($base, 10%);
+
+// core class definitions
+@import 'nativescript-theme-core/scss/index';
+
+// custom classes
+.text-light {
+    color: $white;
+}
+.label1 {
+  font-size:30;
+    top:175;
+    left:30;
+    opacity:0;
+    animation-name: scaleLabel;
+    animation-duration: 1.5s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: spring;
+}
+.label2 {
+  font-size:30;
+    top:100;
+    left:200;
+    opacity:0;
+    animation-name: scaleLabel;
+    animation-duration: 1.8s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: spring;
+}
+.label3 {
+  font-size:30;
+    top:400;
+    left:50;
+    opacity:0;
+    animation-name: scaleLabel;
+    animation-duration: 1.2s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: spring;
+}
+.label4 {
+  font-size:30;
+    top:350;
+    left:240;
+    opacity:0;
+    animation-name: scaleLabel;
+    animation-duration: 1.5s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: spring;
+}
+.circle {
+    border-radius: 200;
+    background-color: $orange;
+    color:white;
+    width:400;
+    height:400;
+    top:-50;
+    left:-100;
+    opacity:0;
+
+    animation-name: circle;
+    animation-duration: 1.5s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: spring;
+
+    &:highlighted {
+        background-color: darken($orange, 4%);
+    }
+}
+
+@keyframes circle {
+    from { transform: translate(0, -100); opacity:0; }
+    to { transform: translate(0, 0); opacity:1; }
+}
+
+.circle2 {
+    border-radius: 150;
+    background-color: $yellow;
+    color:white;
+    width:300;
+    height:300;
+    top:-40;
+    left:150;
+    opacity:0;
+
+    animation-name: circle2;
+    animation-duration: 1.8s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: spring;
+
+    &:highlighted {
+        background-color: darken($yellow, 4%);
+    }
+}
+
+@keyframes circle2 {
+    from { transform: translate(200, -100); opacity:0; }
+    to { transform: translate(0, 0); opacity:1 }
+}
+
+.circle3 {
+    border-radius: 175;
+    background-color: $green-alt;
+    color:white;
+    width:350;
+    height:350;
+    top:290;
+    left:-100;
+    opacity:0;
+
+    animation-name: circle3;
+    animation-duration: 1.2s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: spring;
+
+    &:highlighted {
+        background-color: darken($green-alt, 4%);
+    }
+}
+
+@keyframes circle3 {
+    from { transform: translate(-50, 100); opacity:0; }
+    to { transform: translate(0, 0); opacity:1; }
+}
+
+.circle4 {
+    border-radius: 160;
+    background-color: $burgundy;
+    color:white;
+    width:325;
+    height:325;
+    top:300;
+    left:170;
+    opacity:0;
+
+    animation-name: circle4;
+    animation-duration: 1.5s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: spring;
+
+    &:highlighted {
+        background-color: darken($burgundy, 4%);
+    }
+}
+
+@keyframes circle4 {
+    from { transform: translate(100, 50); opacity:0; }
+    to { transform: translate(0, 0); opacity:1; }
+}
+
+@keyframes scaleLabel {
+    from { transform: scale(.5, .5); opacity:0; }
+    to { transform: scale(1,1); opacity:1; }
+}
